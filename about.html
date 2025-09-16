@@ -1,168 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
-        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" />
-
     <title>Dylan Piserchia - About</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <style>
-        body {
-            font-family: "Space Grotesk", "Noto Sans", sans-serif;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#141a1f] text-white min-h-screen flex flex-col">
-    <div class="flex h-full grow flex-col">
-        <header
-            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2b3640] px-6 sm:px-10 py-3">
-            <div class="flex items-center gap-4 text-white">
-                <div class="size-4">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
-                            fill="currentColor"></path>
-                    </svg>
+<body class="bg-gray-900 text-gray-200">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Dylan Piserchia - Game Designer</h1>
+            <nav>
+                <a class="px-4 py-2 hover:text-white" href="index.html">Home</a>
+                <a class="px-4 py-2 hover:text-white" href="index.html#projects">Projects</a>
+                <a class="px-4 py-2 text-white font-bold" href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <section class="container mx-auto px-6 py-16">
+            <div class="bg-gray-800 rounded-2xl shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-shrink-0">
+                    <img class="w-32 h-32 rounded-full object-cover shadow-lg" src="assets/img/profile_image.jpg"
+                        alt="Profile Picture">
                 </div>
-                <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Dylan Piserchia -
-                    Portfolio
-                </h2>
-            </div>
-            <div class="flex flex-1 justify-end gap-4 sm:gap-8">
-                <div class="flex items-center gap-4 sm:gap-9">
-                    <a class="text-white text-sm font-medium leading-normal hover:text-[#90aecb]"
-                        href="index.html">Home</a>
-                    <a class="text-white text-sm font-medium leading-normal hover:text-[#90aecb]" href="#">Projects</a>
-                    <a class="text-[#90aecb] text-sm font-medium leading-normal" href="about.html">About</a>
-                </div>
-                <div class="flex gap-2">
-                    <a href="https://www.linkedin.com/in/dylan-ian-piserchia/" target="_blank" rel="noopener noreferrer"
-                        class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#2b3640] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-[#3d4d5c] transition-colors">
-                        <div class="text-white" data-icon="LinkedinLogo" data-size="20px" data-weight="regular">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
-                                viewBox="0 0 256 256">
-                                <path
-                                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
-                                </path>
-                            </svg>
-                        </div>
+                <div class="flex flex-col flex-grow text-center md:text-left">
+                    <h1 class="text-4xl font-bold leading-tight tracking-tight mb-2">Dylan Piserchia</h1>
+                    <p class="text-gray-400 text-lg mb-4">Game Designer</p>
+                    <p class="text-gray-300 text-base leading-relaxed mb-6">
+                        I am a passionate and detail-oriented Game Designer with over 4 years of professional
+                        experience, specializing in system design, gameplay balancing, and creating
+                        comprehensive design documentation. Proven ability to collaborate effectively in
+                        multidisciplinary teams to deliver engaging and memorable player experiences.
+                    </p>
+                    <a href="https://drive.google.com/uc?export=download&id=18oVbAGUUH2Dn0zG8_6AHb77TwxQjYmn0"
+                        target="_blank" rel="noopener noreferrer"
+                        class="self-center md:self-start bg-white text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition-colors">
+                        Download Resume (EN)
                     </a>
                 </div>
             </div>
-        </header>
-        <main class="px-6 sm:px-10 py-8 flex flex-1 justify-center">
-            <div class="layout-content-container flex flex-col w-full max-w-[960px] space-y-8">
-                <section class="bg-[#1f272e] border border-[#3d4d5c] rounded-lg p-6">
-                    <div class="flex flex-col sm:flex-row items-center gap-6">
-                        <div class="flex-shrink-0">
-                            <img class="w-24 h-24 rounded-full object-cover" src="assets/img/profile_image.jpg"
-                                alt="Profile Picture Placeholder">
-                        </div>
-                        <div class="flex flex-col flex-grow">
-                            <h1 class="text-white text-2xl sm:text-3xl font-bold leading-tight tracking-tight">Dylan
-                                Piserchia</h1>
-                            <p class="text-[#9daebe] text-base font-normal leading-normal mt-1">Game Designer</p>
-                            <p class="text-white text-base font-normal leading-relaxed mt-4">
-                                I am a passionate and detail-oriented Game Designer with over 4 years of professional
-                                experience, specializing in system design, gameplay balancing, and creating
-                                comprehensive design documentation. Proven ability to collaborate effectively in
-                                multidisciplinary teams to deliver engaging and memorable player experiences.
-                            </p>
-                            <a href="https://drive.google.com/uc?export=download&id=18oVbAGUUH2Dn0zG8_6AHb77TwxQjYmn0"
-                                target="_blank" rel="noopener noreferrer"
-                                class="mt-6 inline-flex self-start items-center gap-2 px-6 py-3 rounded-lg bg-[#d93b3b] hover:bg-[#b23030] text-white font-semibold text-base transition-colors shadow-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 15 15"
-                                    fill="#FFFFFF" role="img" aria-hidden="true">
-                                    <path
-                                        d="M2.5 6.5V6H2V6.5H2.5ZM6.5 6.5V6H6V6.5H6.5ZM6.5 10.5H6V11H6.5V10.5ZM13.5 3.5H14V3.29289L13.8536 3.14645L13.5 3.5ZM10.5 0.5L10.8536 0.146447L10.7071 0H10.5V0.5ZM2.5 7H3.5V6H2.5V7ZM3 11V8.5H2V11H3ZM3 8.5V6.5H2V8.5H3ZM3.5 8H2.5V9H3.5V8ZM4 7.5C4 7.77614 3.77614 8 3.5 8V9C4.32843 9 5 8.32843 5 7.5H4ZM3.5 7C3.77614 7 4 7.22386 4 7.5H5C5 6.67157 4.32843 6 3.5 6V7ZM6 6.5V10.5H7V6.5H6ZM6.5 11H7.5V10H6.5V11ZM9 9.5V7.5H8V9.5H9ZM7.5 6H6.5V7H7.5V6ZM9 7.5C9 6.67157 8.32843 6 7.5 6V7C7.77614 7 8 7.22386 8 7.5H9ZM7.5 11C8.32843 11 9 10.3284 9 9.5H8C8 9.77614 7.77614 10 7.5 10V11ZM10 6V11H11V6H10ZM10.5 7H13V6H10.5V7ZM10.5 9H12V8H10.5V9ZM2 5V1.5H1V5H2ZM13 3.5V5H14V3.5H13ZM2.5 1H10.5V0H2.5V1ZM10.1464 0.853553L13.1464 3.85355L13.8536 3.14645L10.8536 0.146447L10.1464 0.853553ZM2 1.5C2 1.22386 2.22386 1 2.5 1V0C1.67157 0 1 0.671573 1 1.5H2ZM1 12V13.5H2V12H1ZM2.5 15H12.5V14H2.5V15ZM14 13.5V12H13V13.5H14ZM12.5 15C13.3284 15 14 14.3284 14 13.5H13C13 13.7761 12.7761 14 12.5 14V15ZM1 13.5C1 14.3284 1.67157 15 2.5 15V14C2.22386 14 2 13.7761 2 13.5H1Z">
-                                        <path
-                                            d="M2.5 6.5V6H2V6.5H2.5ZM6.5 6.5V6H6V6.5H6.5ZM6.5 10.5H6V11H6.5V10.5ZM13.5 3.5H14V3.29289L13.8536 3.14645L13.5 3.5ZM10.5 0.5L10.8536 0.146447L10.7071 0H10.5V0.5ZM2.5 7H3.5V6H2.5V7ZM3 11V8.5H2V11H3ZM3 8.5V6.5H2V8.5H3ZM3.5 8H2.5V9H3.5V8ZM4 7.5C4 7.77614 3.77614 8 3.5 8V9C4.32843 9 5 8.32843 5 7.5H4ZM3.5 7C3.77614 7 4 7.22386 4 7.5H5C5 6.67157 4.32843 6 3.5 6V7ZM6 6.5V10.5H7V6.5H6ZM6.5 11H7.5V10H6.5V11ZM9 9.5V7.5H8V9.5H9ZM7.5 6H6.5V7H7.5V6ZM9 7.5C9 6.67157 8.32843 6 7.5 6V7C7.77614 7 8 7.22386 8 7.5H9ZM7.5 11C8.32843 11 9 10.3284 9 9.5H8C8 9.77614 7.77614 10 7.5 10V11ZM10 6V11H11V6H10ZM10.5 7H13V6H10.5V7ZM10.5 9H12V8H10.5V9ZM2 5V1.5H1V5H2ZM13 3.5V5H14V3.5H13ZM2.5 1H10.5V0H2.5V1ZM10.1464 0.853553L13.1464 3.85355L13.8536 3.14645L10.8536 0.146447L10.1464 0.853553ZM2 1.5C2 1.22386 2.22386 1 2.5 1V0C1.67157 0 1 0.671573 1 1.5H2ZM1 12V13.5H2V12H1ZM2.5 15H12.5V14H2.5V15ZM14 13.5V12H13V13.5H14ZM12.5 15C13.3284 15 14 14.3284 14 13.5H13C13 13.7761 12.7761 14 12.5 14V15ZM1 13.5C1 14.3284 1.67157 15 2.5 15V14C2.22386 14 2 13.7761 2 13.5H1Z">
-                                        </path>
-                                </svg>Download Resume (EN)
-                            </a>
-                        </div>
-                    </div>
-                </section>
+        </section>
 
-                <section>
-                    <div class="flex flex-col items-center mb-6">
-                        <h2 class="text-white text-2xl sm:text-3xl font-bold leading-tight tracking-tight">Skills &amp;
-                            Expertise</h2>
-                        <div class="h-0.5 w-16 bg-[#90aecb] mt-2"></div>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        <div
-                            class="flex items-center gap-3 rounded-lg border border-[#3d4d5c] bg-[#1f272e] p-4 hover:border-[#90aecb] transition-colors duration-300">
-                            <div class="text-white size-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                                    viewBox="0 0 256 256">
-                                    <path
-                                        d="M220.27,158.54a8,8,0,0,0-7.7-.46,20,20,0,1,1,0-36.16A8,8,0,0,0,224,114.69V72a16,16,0,0,0-16-16H171.78a35.36,35.36,0,0,0,.22-4,36.11,36.11,0,0,0-11.36-26.24,36,36,0,0,0-60.55,23.62,36.56,36.56,0,0,0,.14,6.62H64A16,16,0,0,0,48,72v32.22a35.36,35.36,0,0,0-4-.22,36.12,36.12,0,0,0-26.24,11.36,35.7,35.7,0,0,0-9.69,27,36.08,36.08,0,0,0,33.31,33.6,35.68,35.68,0,0,0,6.62-.14V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V165.31A8,8,0,0,0,220.27,158.54ZM208,208H64V165.31a8,8,0,0,0-11.43-7.23,20,20,0,1,1,0-36.16A8,8,0,0,0,64,114.69V72h46.69a8,8,0,0,0,7.23-11.43,20,20,0,1,1,36.16,0A8,8,0,0,0,161.31,72H208v32.23a35.68,35.68,0,0,0-6.62-.14A36,36,0,0,0,204,176a35.36,35.36,0,0,0,4-.22Z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-white text-base font-bold leading-tight">Game Design</h3>
-                        </div>
-                        <div
-                            class="flex items-center gap-3 rounded-lg border border-[#3d4d5c] bg-[#1f272e] p-4 hover:border-[#90aecb] transition-colors duration-300">
-                            <div class="text-white size-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 14 14"
-                                    fill="#FFFFFF" role="img" focusable="false" aria-hidden="true">
-                                    <path
-                                        d="m 7.15165,12.390099 c -0.1799,-0.025 -0.5247,-0.1023 -0.7791,-0.174 -1.1482,-0.3234 -2.0896,-0.8892 -2.6842,-1.613 -0.09,-0.1095 -0.206,-0.2684 -0.2002,-0.2741 0,0 0.055,9e-4 0.1179,0.01 0.1339,0.013 0.3095,0.01 0.3869,-0.014 0.1693,-0.045 0.2743,-0.1535 0.3012,-0.3113 0.01,-0.041 0.01,-0.6813997 0.01,-2.2312997 l 0,-2.1734 -0.025,-0.071 c -0.06,-0.1688 -0.1566,-0.2408 -0.3535,-0.2626 -0.1052,-0.012 -0.2492,0.045 -0.4352,0.1705 -0.6759,0.457 -1.5515,1.5747 -2.4169,3.0854 -0.039,0.068 -0.072,0.1227 -0.073,0.1215 0,0 0,-0.093 0.01,-0.2037 0.055,-1.363 0.6424,-2.7903 1.676,-4.0715 0.2517,-0.3121 0.6313,-0.7155 0.9286,-0.9871 0.9611,-0.8781 2.0229,-1.4853 3.0913,-1.7677 l 0.086,-0.023 -0.028,0.024 c -0.015,0.014 -0.086,0.075 -0.1572,0.1369 -0.1455,0.1265 -0.3968,0.3738 -0.5144,0.5064 -0.3093,0.3488 -0.4924,0.6591 -0.53,0.8981 -0.021,0.1345 0,0.4327 0.05,0.6072 0.055,0.2071 0.1569,0.341 0.2989,0.3933 0.04,0.015 0.073,0.019 0.1382,0.019 0.098,-10e-5 0.1691,-0.017 0.2677,-0.062 l 0.065,-0.03 0,2.7467 0,2.7466 0.029,0.06 c 0.083,0.1693 0.2788,0.2441 0.6697,0.2564 0.1942,0.01 0.2573,0 0.4057,-0.048 0.2398,-0.076 0.5342,-0.2259 0.8654,-0.4407 l 0.095,-0.062 10e-5,-2.2424 c 10e-5,-2.4087 0,-2.2916 -0.045,-2.4328 -0.084,-0.2536 -0.35,-0.6106 -0.6703,-0.9 l -0.1046,-0.094 0.052,0 c 0.077,0 0.27,0.023 0.4031,0.056 0.2532,0.064 0.5135,0.1777 0.7124,0.3119 l 0.065,0.044 0.023,-0.039 c 0.037,-0.064 0.1368,-0.1842 0.2339,-0.2834 0.5226,-0.5337 1.3583,-0.9725 2.4437,-1.2832 0.096,-0.027 0.1781,-0.05 0.1824,-0.05 0,0 -0.046,0.072 -0.1121,0.1597 -0.3868,0.515 -0.7479,1.0738 -0.9321,1.4422 -0.094,0.1875 -0.1378,0.2993 -0.1581,0.4005 -0.017,0.086 -0.031,4.8006 -0.015,4.8624 0.03,0.1108 0.1558,0.1744 0.3695,0.187 0.1092,0.01 0.2144,-0.011 0.3712,-0.063 0.5493,-0.1805 1.0952,-0.533 1.5785,-1.0194 l 0.1544,-0.1553 -0.011,0.043 c -0.034,0.1295 -0.1689,0.3752 -0.378,0.6904 -0.6558,0.9887 -1.587,1.9992997 -2.4662,2.6766997 -0.1486,0.1145 -0.4347,0.3156 -0.449,0.3156 -0.01,0 -0.2886,-0.2784 -0.6291,-0.6187 -0.5288,-0.5284 -0.6208,-0.6167 -0.63,-0.6046 -0.01,0.01 -0.2856,0.3814 -0.6213,0.8302 -0.3358,0.4488 -0.6152,0.8155 -0.621,0.8147 -0.01,-7e-4 -0.023,0 -0.037,-0.01 z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-white text-base font-bold leading-tight">Unreal Engine</h3>
-                        </div>
-                        <div
-                            class="flex items-center gap-3 rounded-lg border border-[#3d4d5c] bg-[#1f272e] p-4 hover:border-[#90aecb] transition-colors duration-300">
-                            <div class="text-white size-6">
-                                <svg fill="#FFFF" width="24px" height="24px" viewBox="-0.5 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="m15.266 12.001 4.2-7.249 2.03 7.253-2.03 7.25-4.2-7.25zm-2.047 1.177 4.201 7.254-7.316-1.876-5.285-5.378zm4.2-9.608-4.2 7.253h-8.4l5.285-5.378 7.314-1.875zm6 5.963-2.566-9.533-9.564 2.555-1.416 2.489-2.873-.021-7 6.978 7 6.977 2.871-.022 1.418 2.489 9.564 2.554 2.56-9.531-1.453-2.468z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-white text-base font-bold leading-tight">Unity</h3>
-                        </div>
-                        <div
-                            class="flex items-center gap-3 rounded-lg border border-[#3d4d5c] bg-[#1f272e] p-4 hover:border-[#90aecb] transition-colors duration-300">
-                            <div class="text-white size-6">
-                                <svg fill="#FFFFFF" width="24px" height="24px" viewBox="0 0 32 32" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.15 18.379h-4.247v2.38h4.25v-2.38zM22.797 12.601h-13.596v9.857h13.597v-9.858zM26.876 9.145v19.771c0 0 0 0 0 0.001 0 1.126-0.913 2.038-2.038 2.038-0 0-0.001 0-0.001 0h-17.675c0 0 0 0-0 0-1.126 0-2.039-0.913-2.039-2.039 0 0 0 0 0-0v0-25.833c0-0 0-0 0-0.001 0-1.126 0.913-2.038 2.038-2.038 0 0 0.001 0 0.001 0h11.613v8.101zM21.099 18.379h-4.25v2.38h4.25zM21.099 14.3h-4.25v2.38h4.25zM19.4 1.045v7.478h7.478zM15.15 16.679h-4.247v-2.379h4.25v2.38z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <h3 class="text-white text-base font-bold leading-tight">Spreadsheets</h3>
-                        </div>
-                        <div
-                            class="flex items-center gap-3 rounded-lg border border-[#3d4d5c] bg-[#1f272e] p-4 hover:border-[#90aecb] transition-colors duration-300">
-                            <div class="text-white size-6">
- <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF"><path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24 12.483V1.005A1.001 1.001 0 0 0 23.013 0z"/></svg>
-                            </div>
-                            <h3 class="text-white text-base font-bold leading-tight">Jira</h3>
-                        </div>
-                        <div
-                            class="flex items-center gap-3 rounded-lg border border-[#3d4d5c] bg-[#1f272e] p-4 hover:border-[#90aecb] transition-colors duration-300">
-                            <div class="text-white size-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 -1 34 34"
-                                    fill="#FFFFFF" role="img" aria-hidden="true">
-                                    <path
-                                        d="M3.556 2.845v27.071h27.53v-27.071h-27.53zM28.896 27.763h-23.151v-22.765h23.151v22.765z" />
-                                    <path
-                                        d="M16.555 10.442c-0.693-0.599-1.726-0.939-3.173-0.939-1.433 0-3.173 0.046-3.173 0.046l-0 11.103h2.326v-3.568c0 0 0.407-0.005 0.847-0.023 1.593-0.067 2.526-0.549 3.327-1.364 0.616-0.631 0.955-1.53 0.955-2.627s-0.447-2.062-1.109-2.628zM13.32 15.115c-0.375 0.004-0.533 0.016-0.786-0.008v-3.834c0 0 0.493-0.017 0.971 0 1.198 0.044 1.833 0.89 1.833 1.921-0 1.148-0.77 1.906-2.018 1.921z" />
-                                    <path
-                                        d="M22.205 15.455c-1.005-0.356-1.324-0.559-1.324-0.949 0-0.423 0.352-0.677 0.972-0.677 0.703 0 1.767 0.454 2.136 0.658v-1.871c-0.502-0.254-1.265-0.566-2.22-0.566-2.027 0-3.334 1.169-3.334 2.728-0.017 0.965 0.636 1.655 2.329 2.231 0.955 0.322 1.206 0.767 1.206 1.191s-0.318 0.695-1.089 0.695c-0.754 0-1.86-0.431-2.329-0.718v0 1.847c0.62 0.338 1.518 0.659 2.329 0.684 2.363 0.074 3.551-1.152 3.551-2.694-0.017-1.22-0.67-2.016-2.228-2.558z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-white text-base font-bold leading-tight">Photoshop</h3>
-                        </div>
+        <section class="container mx-auto px-6 py-16">
+            <h3 class="text-4xl font-bold text-center mb-12">Skills & Expertise</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Game Design -->
+                <div class="bg-gray-800 rounded-xl p-6 flex items-center gap-4 transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <div class="text-indigo-400"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" viewBox="0 0 256 256"><path d="M220.27,158.54a8,8,0,0,0-7.7-.46,20,20,0,1,1,0-36.16A8,8,0,0,0,224,114.69V72a16,16,0,0,0-16-16H171.78a35.36,35.36,0,0,0,.22-4,36.11,36.11,0,0,0-11.36-26.24,36,36,0,0,0-60.55,23.62,36.56,36.56,0,0,0,.14,6.62H64A16,16,0,0,0,48,72v32.22a35.36,35.36,0,0,0-4-.22,36.12,36.12,0,0,0-26.24,11.36,35.7,35.7,0,0,0-9.69,27,36.08,36.08,0,0,0,33.31,33.6,35.68,35.68,0,0,0,6.62-.14V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V165.31A8,8,0,0,0,220.27,158.54ZM208,208H64V165.31a8,8,0,0,0-11.43-7.23,20,20,0,1,1,0-36.16A8,8,0,0,0,64,114.69V72h46.69a8,8,0,0,0,7.23-11.43,20,20,0,1,1,36.16,0A8,8,0,0,0,161.31,72H208v32.23a35.68,35.68,0,0,0-6.62-.14A36,36,0,0,0,204,176a35.36,35.36,0,0,0,4-.22Z"></path></svg></div>
+                    <h3 class="text-white text-xl font-bold">Game Design</h3>
+                </div>
+                <!-- Unreal Engine -->
+                <div class="bg-gray-800 rounded-xl p-6 flex items-center gap-4 transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <div class="text-indigo-400"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 14 14" fill="currentColor" role="img" focusable="false" aria-hidden="true"><path d="m 7.15165,12.390099 c -0.1799,-0.025 -0.5247,-0.1023 -0.7791,-0.174 -1.1482,-0.3234 -2.0896,-0.8892 -2.6842,-1.613 -0.09,-0.1095 -0.206,-0.2684 -0.2002,-0.2741 0,0 0.055,9e-4 0.1179,0.01 0.1339,0.013 0.3095,0.01 0.3869,-0.014 0.1693,-0.045 0.2743,-0.1535 0.3012,-0.3113 0.01,-0.041 0.01,-0.6813997 0.01,-2.2312997 l 0,-2.1734 -0.025,-0.071 c -0.06,-0.1688 -0.1566,-0.2408 -0.3535,-0.2626 -0.1052,-0.012 -0.2492,0.045 -0.4352,0.1705 -0.6759,0.457 -1.5515,1.5747 -2.4169,3.0854 -0.039,0.068 -0.072,0.1227 -0.073,0.1215 0,0 0,-0.093 0.01,-0.2037 0.055,-1.363 0.6424,-2.7903 1.676,-4.0715 0.2517,-0.3121 0.6313,-0.7155 0.9286,-0.9871 0.9611,-0.8781 2.0229,-1.4853 3.0913,-1.7677 l 0.086,-0.023 -0.028,0.024 c -0.015,0.014 -0.086,0.075 -0.1572,0.1369 -0.1455,0.1265 -0.3968,0.3738 -0.5144,0.5064 -0.3093,0.3488 -0.4924,0.6591 -0.53,0.8981 -0.021,0.1345 0,0.4327 0.05,0.6072 0.055,0.2071 0.1569,0.341 0.2989,0.3933 0.04,0.015 0.073,0.019 0.1382,0.019 0.098,-10e-5 0.1691,-0.017 0.2677,-0.062 l 0.065,-0.03 0,2.7467 0,2.7466 0.029,0.06 c 0.083,0.1693 0.2788,0.2441 0.6697,0.2564 0.1942,0.01 0.2573,0 0.4057,-0.048 0.2398,-0.076 0.5342,-0.2259 0.8654,-0.4407 l 0.095,-0.062 10e-5,-2.2424 c 10e-5,-2.4087 0,-2.2916 -0.045,-2.4328 -0.084,-0.2536 -0.35,-0.6106 -0.6703,-0.9 l -0.1046,-0.094 0.052,0 c 0.077,0 0.27,0.023 0.4031,0.056 0.2532,0.064 0.5135,0.1777 0.7124,0.3119 l 0.065,0.044 0.023,-0.039 c 0.037,-0.064 0.1368,-0.1842 0.2339,-0.2834 0.5226,-0.5337 1.3583,-0.9725 2.4437,-1.2832 0.096,-0.027 0.1781,-0.05 0.1824,-0.05 0,0 -0.046,0.072 -0.1121,0.1597 -0.3868,0.515 -0.7479,1.0738 -0.9321,1.4422 -0.094,0.1875 -0.1378,0.2993 -0.1581,0.4005 -0.017,0.086 -0.031,4.8006 -0.015,4.8624 0.03,0.1108 0.1558,0.1744 0.3695,0.187 0.1092,0.01 0.2144,-0.011 0.3712,-0.063 0.5493,-0.1805 1.0952,-0.533 1.5785,-1.0194 l 0.1544,-0.1553 -0.011,0.043 c -0.034,0.1295 -0.1689,0.3752 -0.378,0.6904 -0.6558,0.9887 -1.587,1.9992997 -2.4662,2.6766997 -0.1486,0.1145 -0.4347,0.3156 -0.449,0.3156 -0.01,0 -0.2886,-0.2784 -0.6291,-0.6187 -0.5288,-0.5284 -0.6208,-0.6167 -0.63,-0.6046 -0.01,0.01 -0.2856,0.3814 -0.6213,0.8302 -0.3358,0.4488 -0.6152,0.8155 -0.621,0.8147 -0.01,-7e-4 -0.023,0 -0.037,-0.01 z" /></svg></div>
+                    <h3 class="text-white text-xl font-bold">Unreal Engine</h3>
+                </div>
+                 <!-- Unity -->
+                <div class="bg-gray-800 rounded-xl p-6 flex items-center gap-4 transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <div class="text-indigo-400"><svg fill="currentColor" width="32px" height="32px" viewBox="-0.5 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.266 12.001 4.2-7.249 2.03 7.253-2.03 7.25-4.2-7.25zm-2.047 1.177 4.201 7.254-7.316-1.876-5.285-5.378zm4.2-9.608-4.2 7.253h-8.4l5.285-5.378 7.314-1.875zm6 5.963-2.566-9.533-9.564 2.555-1.416 2.489-2.873-.021-7 6.978 7 6.977 2.871-.022 1.418 2.489 9.564 2.554 2.56-9.531-1.453-2.468z" /></svg></div>
+                    <h3 class="text-white text-xl font-bold">Unity</h3>
+                </div>
+                <!-- Spreadsheets -->
+                <div class="bg-gray-800 rounded-xl p-6 flex items-center gap-4 transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <div class="text-indigo-400"><svg fill="currentColor" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M15.15 18.379h-4.247v2.38h4.25v-2.38zM22.797 12.601h-13.596v9.857h13.597v-9.858zM26.876 9.145v19.771c0 0 0 0 0 0.001 0 1.126-0.913 2.038-2.038 2.038-0 0-0.001 0-0.001 0h-17.675c0 0 0 0-0 0-1.126 0-2.039-0.913-2.039-2.039 0 0 0 0 0-0v0-25.833c0-0 0-0 0-0.001 0-1.126 0.913-2.038 2.038-2.038 0 0 0.001 0 0.001 0h11.613v8.101zM21.099 18.379h-4.25v2.38h4.25zM21.099 14.3h-4.25v2.38h4.25zM19.4 1.045v7.478h7.478zM15.15 16.679h-4.247v-2.379h4.25v2.38z"></path></svg></div>
+                    <h3 class="text-white text-xl font-bold">Spreadsheets</h3>
+                </div>
+                <!-- Jira -->
+                <div class="bg-gray-800 rounded-xl p-6 flex items-center gap-4 transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <div class="text-indigo-400"><svg width="32px" height="32px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24 12.483V1.005A1.001 1.001 0 0 0 23.013 0z"/></svg></div>
+                    <h3 class="text-white text-xl font-bold">Jira</h3>
+                </div>
+                <!-- Photoshop -->
+                <div class="bg-gray-800 rounded-xl p-6 flex items-center gap-4 transform hover:scale-105 transition-transform duration-300 shadow-lg">
+                    <div class="text-indigo-400"><svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 -1 34 34" fill="currentColor" role="img" aria-hidden="true"><path d="M3.556 2.845v27.071h27.53v-27.071h-27.53zM28.896 27.763h-23.151v-22.765h23.151v22.765z" /><path d="M16.555 10.442c-0.693-0.599-1.726-0.939-3.173-0.939-1.433 0-3.173 0.046-3.173 0.046l-0 11.103h2.326v-3.568c0 0 0.407-0.005 0.847-0.023 1.593-0.067 2.526-0.549 3.327-1.364 0.616-0.631 0.955-1.53 0.955-2.627s-0.447-2.062-1.109-2.628zM13.32 15.115c-0.375 0.004-0.533 0.016-0.786-0.008v-3.834c0 0 0.493-0.017 0.971 0 1.198 0.044 1.833 0.89 1.833 1.921-0 1.148-0.77 1.906-2.018 1.921z" /><path d="M22.205 15.455c-1.005-0.356-1.324-0.559-1.324-0.949 0-0.423 0.352-0.677 0.972-0.677 0.703 0 1.767 0.454 2.136 0.658v-1.871c-0.502-0.254-1.265-0.566-2.22-0.566-2.027 0-3.334 1.169-3.334 2.728-0.017 0.965 0.636 1.655 2.329 2.231 0.955 0.322 1.206 0.767 1.206 1.191s-0.318 0.695-1.089 0.695c-0.754 0-1.86-0.431-2.329-0.718v0 1.847c0.62 0.338 1.518 0.659 2.329 0.684 2.363 0.074 3.551-1.152 3.551-2.694-0.017-1.22-0.67-2.016-2.228-2.558z" /></svg></div>
+                    <h3 class="text-white text-xl font-bold">Photoshop</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p>© 2025 Dylan Piserchia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
