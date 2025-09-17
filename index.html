@@ -7,7 +7,7 @@
   <title>Game Designer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel-stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -42,55 +42,45 @@
     </section>
 
     <section class="py-20 bg-gray-900" id="projects">
-      <div class="container mx-auto px-6">
-        <h3 class="text-4xl font-bold text-center mb-12">Featured Projects</h3>
-        <div class="relative">
-          <div class="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-6 pb-6"
-            id="carousel">
-            <div
-              class="carousel-item flex-shrink-0 w-80 md:w-96 snap-center bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
-              <img alt="Star Trek: Infinite cover image" class="w-full h-48 object-cover"
-                src="assets/img/STI_img1.jpg" />
-              <div class="p-6 flex flex-col flex-grow">
-                <div>
-                    <h4 class="text-2xl font-bold mb-2">Star Trek: Infinite</h4>
-                    <p class="text-gray-400 mb-4">Star Trek: Infinite is a grand strategy experience that lets you play your own Star Trek story as the leader of one of four major factions in the galaxy. Follow the specially crafted story or blaze your own trail in the first Star Trek grand strategy game.
-                    </p>
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold text-center mb-8">Featured Projects</h3>
+            <div class="flex justify-start mb-4">
+                <div class="flex space-x-2">
+                    <button id="prevBtn" class="bg-gray-700 w-8 h-8 flex items-center justify-center rounded-full text-white hover:bg-gray-600 transition-colors">
+                        <span class="material-icons text-xl">chevron_left</span>
+                    </button>
+                    <button id="nextBtn" class="bg-gray-700 w-8 h-8 flex items-center justify-center rounded-full text-white hover:bg-gray-600 transition-colors">
+                        <span class="material-icons text-xl">chevron_right</span>
+                    </button>
                 </div>
-                <div class="mt-auto">
-                    <a class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-500 transition-colors"
-                    href="star-trek-infinite.html">View</a>
-                </div>
-              </div>
             </div>
-            <div
-              class="carousel-item flex-shrink-0 w-80 md:w-96 snap-center bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
-              <img alt="Post-apocalyptic shelter concept art" class="w-full h-48 object-cover"
-                src="assets/img/project_zombies_01.png" />
-              <div class="p-6 flex flex-col flex-grow">
-                <div>
-                    <h4 class="text-2xl font-bold mb-2">Project Shelter</h4>
-                    <p class="text-gray-400 mb-4">A survival zombie prototype focused on core survival mechanics.</p>
+            <div class="carousel-container flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-6 pb-6" id="carousel">
+                <div class="carousel-item flex-shrink-0 w-80 md:w-96 snap-center bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                    <img alt="Star Trek: Infinite cover image" class="w-full h-48 object-cover" src="assets/img/STI_img1.jpg" />
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div>
+                            <h4 class="text-2xl font-bold mb-2">Star Trek: Infinite</h4>
+                            <p class="text-gray-400 mb-4">Star Trek: Infinite is a grand strategy experience that lets you play your own Star Trek story as the leader of one of four major factions in the galaxy. Follow the specially crafted story or blaze your own trail in the first Star Trek grand strategy game.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-500 transition-colors" href="star-trek-infinite.html">View</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-auto">
-                    <a class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-500 transition-colors"
-                    href="project-shelter.html">View</a>
+                <div class="carousel-item flex-shrink-0 w-80 md:w-96 snap-center bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                    <img alt="Post-apocalyptic shelter concept art" class="w-full h-48 object-cover" src="assets/img/project_zombies_01.png" />
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div>
+                            <h4 class="text-2xl font-bold mb-2">Project Shelter</h4>
+                            <p class="text-gray-400 mb-4">A survival zombie prototype focused on core survival mechanics.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-500 transition-colors" href="project-shelter.html">View</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <button
-            class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 bg-white/20 p-2 rounded-full text-white hover:bg-white/30 backdrop-blur-sm z-10 hidden md:block"
-            id="prevBtn">
-            <span class="material-icons">chevron_left</span>
-          </button>
-          <button
-            class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 bg-white/20 p-2 rounded-full text-white hover:bg-white/30 backdrop-blur-sm z-10 hidden md:block"
-            id="nextBtn">
-            <span class="material-icons">chevron_right</span>
-          </button>
         </div>
-      </div>
     </section>
   </main>
   <footer class="bg-gray-900 border-t border-gray-800 mt-20">
