@@ -33,15 +33,14 @@ Esta sección documenta el estado actual del proyecto, incluyendo todas las deci
     *   **Contenido Derecho (Logo):**
         *   Se ha reemplazado la imagen de marcador de posición por el logo personal `DP_Logo.png`.
         *   El tamaño del logo se ha reducido en un 20% (`w-4/5`) y se ha centrado horizontalmente (`mx-auto`) para un mejor equilibrio visual.
-        *   Se ha eliminado cualquier sombra (`shadow-2xl`) para un aspecto más limpio y plano.
 
 *   **Sección de Proyectos (`<section id="projects">`):**
     *   **Diseño:** Un carrusel horizontal que permite a los usuarios desplazarse por los proyectos destacados.
     *   **Tarjetas de Proyecto:** Cada tarjeta tiene un diseño consistente con una imagen, título, descripción y un botón de "Ver" que enlaza a la página de detalle del proyecto.
     *   **Controles de Navegación del Carrusel:**
-        *   **Posición:** Los botones de flecha (izquierda y derecha) están agrupados.
-        *   **Ubicación:** Se encuentran "al norte" del carrusel, es decir, en un área separada justo debajo del título de la sección ("Featured Projects") y alineados a la izquierda. Esto evita que se superpongan con el contenido del carrusel.
-        *   **Estilo:** Botones redondeados con un color de fondo sutil que cambia al pasar el ratón por encima (`hover:bg-gray-600`).
+        *   **Posición:** Los botones de flecha están agrupados y ubicados "al norte" del carrusel, alineados a la izquierda.
+        *   **Estilo de Botones:** Son círculos perfectos (`w-8 h-8 rounded-full`) con un fondo `bg-gray-700` que cambia a `hover:bg-gray-600`.
+        *   **Estilo de Iconos:** Los iconos de flecha (`material-icons`) están centrados dentro de los botones (`flex items-center justify-center`) y tienen un tamaño de fuente `text-xl` para una apariencia proporcionada.
 
 *   **Pie de Página (`<footer>`):**
     *   **Diseño:** Simple y limpio, con un borde superior para separarlo del contenido principal.
@@ -56,12 +55,11 @@ Esta sección documenta el estado actual del proyecto, incluyendo todas las deci
 
 Esta sección describe el plan para la última solicitud de cambio realizada.
 
-**Solicitud:** Mover las flechas de navegación del carrusel para que estén juntas y ubicadas arriba (al norte) del primer elemento, sin superponerse.
+**Solicitud:** Reducir el tamaño de los botones de navegación del carrusel y sus iconos para una apariencia más proporcionada.
 
 **Pasos de Implementación:**
 
-1.  **Eliminar Posicionamiento Absoluto:** Se quitaron las clases de posicionamiento (`absolute`, `top-1/2`, `left-0`, `right-0`, etc.) de los botones de flecha para que dejen de superponerse al carrusel.
-2.  **Crear un Contenedor para los Botones:** Se creó un nuevo `div` para agrupar los dos botones (`<button id="prevBtn">` y `<button id="nextBtn">`).
-3.  **Ubicar el Contenedor:** Este nuevo `div` se colocó en el flujo normal del documento, específicamente entre el título `<h3>Featured Projects</h3>` y el `div` del carrusel.
-4.  **Alinear a la Izquierda:** Se aplicaron clases de Flexbox (`flex justify-start`) al contenedor de los botones para alinearlos a la izquierda de la página.
-5.  **Ajustar Márgenes:** Se añadió un margen inferior (`mb-4`) al contenedor de los botones para crear una separación visual adecuada con el carrusel que se encuentra debajo.
+1.  **Reducir Tamaño de Botones:** Se cambiaron las clases de tamaño de `w-12 h-12` a `w-8 h-8` para hacer los botones más pequeños.
+2.  **Asegurar Forma Circular:** Se mantuvo la clase `rounded-full` para que sigan siendo círculos perfectos.
+3.  **Centrar Iconos:** Se conservaron las clases `flex items-center justify-center` para mantener los iconos centrados.
+4.  **Reducir Tamaño de Iconos:** Se añadió la clase `text-xl` a los `<span>` de los iconos para reducir su tamaño y hacer que encajen mejor en los botones más pequeños.
